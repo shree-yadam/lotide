@@ -10,9 +10,9 @@ const assertEqual = function(actual, expected) {
   //get stop emoji
   const emojiFail = emoji.get('octagonal_sign');
   if (actual === expected) {
-    console.log(emojiSuccess + emojiSuccess + emojiSuccess + "Assertion Passed: [" + actual + "] === [" + expected + "]");
+    console.log(`${emojiSuccess + emojiSuccess + emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
   } else {
-    console.log(emojiFail + emojiFail + emojiFail + "Assertion Failed: [" + actual + "] !== [" + expected + "]");
+    console.log(`${emojiFail + emojiFail + emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
   }
 };
 
