@@ -1,4 +1,4 @@
-/* Create a functiomn nead which returns first item in the array */
+/* Create a function head which returns first item in the array */
 
 //require nod-emoji package for emojis
 const emoji = require('node-emoji');
@@ -21,7 +21,7 @@ const head = function(arr) {
     return undefined;
   }
   return arr[0];
-}
+};
 
 //TEST CASES
 assertEqual(head([5,6,7]), 5);
