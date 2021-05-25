@@ -17,7 +17,7 @@ const eqArrays = function(arr1, arr2) {
   return false;
 };
 
-const assertArrayEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   //get check mark emoji
   const emojiSuccess = emoji.get('white_check_mark');
   //get stop emoji
@@ -29,4 +29,4 @@ const assertArrayEqual = function(actual, expected) {
   }
 };
 
-assertArrayEqual([1,2, 3], [1,2,3]);
+assertArraysEqual([1,2, 3], [1,2,3]);
