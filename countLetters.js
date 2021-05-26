@@ -18,7 +18,7 @@ const countLetters = function(str) {
   const result = {};
   for (let elem of str) {
     if (elem !== " ") {
-      if(result[elem.toLowerCase()]) {
+      if (result[elem.toLowerCase()]) {
         result[elem.toLowerCase()] += 1;
       } else {
         result[elem.toLowerCase()] = 1;
