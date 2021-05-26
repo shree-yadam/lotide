@@ -32,11 +32,11 @@ const middle = function(arr) {
     return [];
   }
   const result = [];
-  if(arr.length% 2 !== 0) {
-    result.push(arr[(arr.length-1)/2]);
+  if (arr.length % 2 !== 0) {
+    result.push(arr[(arr.length - 1) / 2]);
   } else {
-    result.push(arr[arr.length/2 - 1]);
-    result.push(arr[arr.length/2]);
+    result.push(arr[arr.length / 2 - 1]);
+    result.push(arr[arr.length / 2]);
   }
   return result;
 };
