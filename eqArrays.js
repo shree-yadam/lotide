@@ -2,18 +2,16 @@
 Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
 */
 
-//require nod-emoji package for emojis
-const emoji = require('node-emoji');
-
+//FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   //get check mark emoji
-  const emojiSuccess = emoji.get('white_check_mark');
+  const emojiSuccess = "✅✅✅";
   //get stop emoji
-  const emojiFail = emoji.get('octagonal_sign');
+  const emojiFail = "🛑🛑🛑";
   if (actual === expected) {
-    console.log(`${emojiSuccess + emojiSuccess + emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
+    console.log(`${emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
   } else {
-    console.log(`${emojiFail + emojiFail + emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
+    console.log(`${emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
   }
 };
 

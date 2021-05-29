@@ -1,5 +1,3 @@
-const emoji = require('node-emoji');
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
@@ -13,14 +11,12 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const assertArraysEqual = function(actual, expected) {
-  //get check mark emoji
-  const emojiSuccess = emoji.get('white_check_mark');
-  //get stop emoji
-  const emojiFail = emoji.get('octagonal_sign');
+  const emojiSuccess = "✅✅✅";
+  const emojiFail = "🛑🛑🛑";
   if (eqArrays(actual, expected)) {
-    console.log(`${emojiSuccess + emojiSuccess + emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
+    console.log(`${emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
   } else {
-    console.log(`${emojiFail + emojiFail + emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
+    console.log(`${emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
   }
 };
 
@@ -44,3 +40,6 @@ assertArraysEqual(map([], word => word[0]), []);
 //pass array of objects
 const testObj = [{a:1, b:2, c:3}, {d:4, e:5}, {f: 6, g:7, h:8, i: 9}];
 assertArraysEqual(map(testObj, x => Object.keys(x).length), [3, 2, 4]);
+
+//array of int ...math op
+assertArraysEqual(map([1, 2, 3, 4, 5], x => x * x), [1, 4, 9, 16, 25]);

@@ -1,6 +1,3 @@
-//require nod-emoji package for emojis
-const emoji = require('node-emoji');
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
@@ -14,14 +11,12 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const assertArraysEqual = function(actual, expected) {
-  //get check mark emoji
-  const emojiSuccess = emoji.get('white_check_mark');
-  //get stop emoji
-  const emojiFail = emoji.get('octagonal_sign');
+  const emojiSuccess = "✅✅✅";
+  const emojiFail = "🛑🛑🛑";
   if (eqArrays(actual, expected)) {
-    console.log(`${emojiSuccess + emojiSuccess + emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
+    console.log(`${emojiSuccess}Assertion Passed: [${actual}] === [${expected }]`);
   } else {
-    console.log(`${emojiFail + emojiFail + emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
+    console.log(`${emojiFail}Assertion Failed: [${actual}] !== [${expected }]`);
   }
 };
 
@@ -52,3 +47,6 @@ console.log(results2);
 //TEST CASES
 assertArraysEqual(takeUntil(data1, x => x % 2 === 0), [1]);
 assertArraysEqual(takeUntil([], x => x % 2 === 0), []);
+assertArraysEqual(takeUntil(data1, x => x === 1), []);
+// callback never evaluates to true
+assertArraysEqual(takeUntil(data1, x => x > 8), data1);

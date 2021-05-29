@@ -1,6 +1,3 @@
-//require nod-emoji package for emojis
-const emoji = require('node-emoji');
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
@@ -33,13 +30,13 @@ const eqObjects = function(obj1, obj2) {
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect; // <= add this line
   //get check mark emoji
-  const emojiSuccess = emoji.get('white_check_mark');
+  const emojiSuccess = "✅✅✅";
   //get stop emoji
-  const emojiFail = emoji.get('octagonal_sign');
+  const emojiFail = "🛑🛑🛑";
   if (eqObjects(actual, expected)) {
-    console.log(`${emojiSuccess + emojiSuccess + emojiSuccess}Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+    console.log(`${emojiSuccess}Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    console.log(`${emojiFail + emojiFail + emojiFail}Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+    console.log(`${emojiFail}Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
 
