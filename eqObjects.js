@@ -48,32 +48,32 @@ const eqObjects = function(obj1, obj2) {
 };
 
 //Test Cases
-// const object1 = {
-//   a: 1,
-//   b: 2,
-//   c: 3
-// };
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
 
-// const object2 = {
-//   b: 2,
-//   c: 3,
-//   a: 1
-// };
+const object2 = {
+  b: 2,
+  c: 3,
+  a: 1
+};
 
-// const object3 = {
-//   a: 1,
-//   b: 2
-// };
+const object3 = {
+  a: 1,
+  b: 2
+};
 
-// assertEqual(eqObjects(object1, object2), true); // => true
-// assertEqual(eqObjects(object1, object3), false); // => false
+assertEqual(eqObjects(object1, object2), true); // => true
+assertEqual(eqObjects(object1, object3), false); // => false
 
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-// assertEqual(eqObjects(cd, dc), true); // => true
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
+assertEqual(eqObjects(cd, dc), true); // => true
 
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// assertEqual(eqObjects(cd, cd2), false); // => false
+const cd2 = { c: "1", d: ["2", 3, 4] };
+assertEqual(eqObjects(cd, cd2), false); // => false
 
 assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true); // => true
 
