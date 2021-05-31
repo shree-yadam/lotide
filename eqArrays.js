@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 /*
 Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
 */
