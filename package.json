@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "node-emoji": "^1.10.0"
-  }
+  },
+  "name": "lotide",
+  "description": "This is Lotide library , similar to lodash library in javascript.",
+  "version": "1.0.0",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shree-yadam/lotide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shree-yadam/lotide/issues"
+  },
+  "homepage": "https://github.com/shree-yadam/lotide#readme"
 }
