@@ -53,6 +53,3 @@ The following functions are currently implemented:
 * `map(arr, callback)`: takes in two arguments: an array to map and a callback function. The map function will return a new array based on the results of the callback function performed on each element of the input array.
 * `takeUntil(arr, callback)`: takes in two arguments: an array to map and a callback function. It returns a slice of the array with elements taken from the beginning until the callback returns a truthy value.
 * `without(array1, array2)`: takes in two arrays and returns a subset of array1, removing unwanted elements given in array2.
-* `assertEqual(actual, expected)`: compares two values it takes in and prints out a message telling if they match or not. Values cannot be arrays or objects
-* `assertArraysEqual(actualArr, expectedArr)`: takes in two arrays and prints out a message telling if they match or not.
-* `assertObjectsEqual(actualArr, expectedArr)`:takes in two objects and prints out a message telling if they match or not.
