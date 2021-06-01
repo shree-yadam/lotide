@@ -1,4 +1,7 @@
 // index.js
+const assertEqual = require('./assertEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertObjectsEqual = require('./assertObjectsEqual');
 const head = require('./head');
 const tail = require('./tail');
 const middle = require('./middle');
@@ -28,5 +31,8 @@ module.exports = {
   letterPositions,
   map,
   takeUntil,
-  without
+  without,
+  assertEqual,
+  assertArraysEqual,
+  assertObjectsEqual
 };

@@ -2,10 +2,10 @@
   "dependencies": {
     "node-emoji": "^1.10.0"
   },
-  "name": "lotide",
+  "name": "@sdyadam/lotide",
   "description": "This is Lotide library , similar to lodash library in javascript.",
   "version": "1.0.0",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/shree-yadam/lotide.git"
   },
-  "author": "",
+  "author": "Shree Devi Yadam",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shree-yadam/lotide/issues"
