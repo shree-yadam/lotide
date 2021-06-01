@@ -3,17 +3,11 @@ Implement the function findKeyByValue which takes in an object and a value. It s
 */
 
 const findKeyByValue = function(obj, val) {
-  console.log(obj);
-  console.log("input val: " + val);
   for (const k in obj) {
-    console.log("Key: " + k);
-    console.log("Value: " + obj[k]);
     if (obj[k] === val) {
-      console.log("found");
       return k;
     }
   }
-  console.log("not found");
   return undefined;
 };
 
